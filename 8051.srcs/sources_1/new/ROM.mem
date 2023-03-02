@@ -1,0 +1,99 @@
+02 //JMP
+00
+09 //-
+63 //XRL
+80
+01 //-
+22 
+xx
+xx //-
+75 //MOVDI //SET INTERRUPT
+A8
+82 //-
+75 //MOVDI //CONFIGURE CKDIV
+F1
+41 //-
+75 //MOVDI //SET AUTORELOAD = 0x10
+8C
+FA //-
+75 //MOVDI //CONFIGURE TMOD
+89
+11 //-
+75 //MOVDI //CONFIGURE TCON
+88
+10 //-
+02 //LJMP
+00
+18 //-
+02 //LJMP 
+00
+19 //-
+04 //INC A
+xx
+xx //-
+22 //RET
+xx
+xx //-
+75 //MOVDI //SET INTERRUPT
+A8
+82 //-
+02 //LJMP
+00
+15 //-
+04 //INCA
+xx
+xx //-
+04 //INCA
+xx
+xx //-
+04 //INCA
+xx
+xx //-
+00 //NOP
+xx
+xx //-
+00 //NOP
+xx
+xx //-
+75 //MOVDI //SET AUTORELOAD = 9
+8C
+03 //-
+75 //MOVDI //CONFIGURE TCON
+88
+01 //-
+12 //LCALL
+00
+12 //-
+02 //JMP
+00
+03 //-
+74 //MOVAI
+cd
+xx //-
+02 //LJMP 
+00
+04 //-
+00 //NOP
+xx
+xx //-
+22 //RET
+xx
+xx //-
+02 //LJMP
+00
+00 //-
+75 //MOVDI
+E0
+11 //-
+B8 //CJNER0IO
+01
+83 //-
+74 //MOVAI
+07
+xx //-
+78 //MOVR0I
+04
+xx //-
+58 //ANLAR0
+xx
+xx //-
